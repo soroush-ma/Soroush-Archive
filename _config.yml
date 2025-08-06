@@ -13,16 +13,16 @@ title                    : "Soroush / Archive"
 title_separator          : "-"
 name                     : "Soroush M.Andashti"
 description              : "Academic Works, etc."
-url                      : "https://soroush-ma.github.io/"  
+url                      : "https://soroush-ma.github.io/Soroush-Archive/"  
 baseurl                  : ""
-repository               : "https://soroush-ma.github.io/Soroush-Archive/"
+repository               : "Soroush-Archive"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.png"
+  avatar           : "profile.png"
   name             : "Soroush M.Andashti"
   pronouns         : "he/him"  
   bio              : "WELCOME!"
