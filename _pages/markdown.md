@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "GUID"
+title: "GUIDANCE"
 author_profile: true
 redirect_from: 
   - /md/
