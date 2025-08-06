@@ -22,7 +22,7 @@ repository               : "https://soroush-ma.github.io/Soroush-Archive/"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "/profile.png"
   name             : "Soroush M.Andashti"
   pronouns         : "he/him"  
   bio              : "WELCOME!"
