@@ -42,9 +42,36 @@
 ;
 .author__avatar {
   width: 140px !important;
-  height: 112px !important;    // 20% shorter than 140
+  height: 112px !important;
   object-fit: cover !important;
-  border-radius: 0 !important; // rectangular
+  border-radius: 0 !important;
   display: block !important;
   margin: 0 auto 15px !important;
+  border: 2px solid #e0e0e0 !important; /* Light gray border */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important; /* Soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+/* Optional: Slight hover effect (desktop) */
+.author__avatar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive: Make avatar smaller on mobile */
+@media (max-width: 768px) {
+  .author__avatar {
+    width: 120px !important;
+    height: 96px !important; /* 20% shorter than 120 */
+    margin: 0 auto 12px !important;
+    border: 1.5px solid #e0e0e0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .author__avatar {
+    width: 100px !important;
+    height: 80px !important; /* 20% shorter than 100 */
+    margin: 0 auto 10px !important;
+  }
 }
