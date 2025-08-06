@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : "Soroush M.Andashti"
 description              : "Academic Works, etc."
 url                      : "https://soroush-ma.github.io/Soroush-Archive/"  
-baseurl                  : "/Soroush-Archive"
+baseurl                  : ""
 repository               : "Soroush-Archive"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
