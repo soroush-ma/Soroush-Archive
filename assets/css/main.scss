@@ -1,13 +1,6 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
 @import
     "vendor/breakpoint/breakpoint",
     "themes",
@@ -31,17 +24,14 @@
     "layout/sidebar",
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+    "vendor/font-awesome/brands";
 
-/* ✅ Now add your custom styles AFTER the @import block */
+// ✅ Now add custom styles AFTER @import
 .author__avatar {
   width: 140px !important;
-  height: 112px !important;    /* 20% shorter than width */
+  height: 112px !important;
   object-fit: cover !important;
-  border-radius: 0 !important; /* Rectangular, no rounded corners */
+  border-radius: 0 !important;
   display: block !important;
   margin: 0 auto 15px !important;
-  padding: 0 !important;
-  max-width: none !important;
 }
