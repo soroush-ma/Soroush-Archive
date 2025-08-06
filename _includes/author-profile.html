@@ -12,6 +12,11 @@
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
+    <img src="{{ author.avatar | relative_url }}"
+     alt="{{ author.name }}"
+     class="author__avatar"
+     style="width: 140px; height: 112px; object-fit: cover; border-radius: 0; display: block; margin: 0 auto;"
+     fetchpriority="high" />
   </div>
 
   <div class="author__content">
