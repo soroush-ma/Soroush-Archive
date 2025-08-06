@@ -39,15 +39,4 @@
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
-   /* Style the avatar in the sidebar */
-.sidebar .avatar {
-  border-radius: 50%;        /* Makes it circular */
-  width: 120px;              /* Adjust size: 100px, 150px, etc. */
-  height: 120px;
-  object-fit: cover;         /* Crops image to fit perfectly in circle */
-  margin: 0 auto 20px;       /* Center and add spacing below */
-  display: block;
-  border: 3px solid #fff;    /* Optional: white border */
-  box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Optional: subtle shadow */
-}
 ;
