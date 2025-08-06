@@ -40,3 +40,13 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Force avatar to be rectangular and 20% shorter */
+.author__avatar {
+  width: 140px !important;
+  height: 112px !important;    /* 20% shorter than 140 */
+  object-fit: cover !important;
+  border-radius: 0 !important; /* Remove any rounding */
+  display: block !important;
+  margin: 0 auto 15px !important;
+}
