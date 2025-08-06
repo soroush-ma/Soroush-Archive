@@ -1,69 +1,29 @@
----
----
-
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
-@import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/default",
-    "theme/dark",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
 .author__avatar {
   width: 140px !important;
   height: 112px !important;
   object-fit: cover !important;
   border-radius: 0 !important;
   display: block !important;
-  margin: 0 auto 15px !important;
-  border: 2px solid #e0e0e0 !important; /* Light gray border */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important; /* Soft shadow */
+  margin-left: -15px !important;  // Moves avatar 15px to the left
+  margin-right: auto !important;  // Keeps right side aligned
+  border: 2px solid #e0e0e0 !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-/* Optional: Slight hover effect (desktop) */
+/* Hover effect */
 .author__avatar:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
   transform: translateY(-2px) !important;
 }
 
-/* Responsive: Make avatar smaller on mobile */
+/* Responsive: Adjust left margin on mobile */
 @media (max-width: 768px) {
   .author__avatar {
     width: 120px !important;
-    height: 96px !important; /* 20% shorter than 120 */
-    margin: 0 auto 12px !important;
+    height: 96px !important;
+    margin-left: -10px !important; /* Slight left shift */
+    margin-right: auto !important;
     border: 1.5px solid #e0e0e0 !important;
   }
 }
@@ -71,7 +31,8 @@
 @media (max-width: 480px) {
   .author__avatar {
     width: 100px !important;
-    height: 80px !important; /* 20% shorter than 100 */
-    margin: 0 auto 10px !important;
+    height: 80px !important;
+    margin-left: 0 !important; /* Center on small screens */
+    margin-right: auto !important;
   }
 }
