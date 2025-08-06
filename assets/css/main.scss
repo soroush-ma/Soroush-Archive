@@ -10,18 +10,14 @@
 
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/default",
     "theme/dark",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
-    "include/utilities",
+    "layout/utilities",
     "layout/tables",
     "layout/buttons",
     "layout/notices",
@@ -29,24 +25,23 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
 
-/* Force avatar to be rectangular and 20% shorter */
+/* ✅ Now add your custom styles AFTER the @import block */
 .author__avatar {
   width: 140px !important;
-  height: 112px !important;    /* 20% shorter than 140 */
+  height: 112px !important;    /* 20% shorter than width */
   object-fit: cover !important;
-  border-radius: 0 !important; /* Remove any rounding */
+  border-radius: 0 !important; /* Rectangular, no rounded corners */
   display: block !important;
   margin: 0 auto 15px !important;
+  padding: 0 !important;
+  max-width: none !important;
 }
